@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header_div{
+    background: rgb(232,6,6);
+    background: linear-gradient(90deg, rgba(232,6,6,1) 0%, rgba(255,255,255,1) 77%);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+}
+h1{
+    font-size: 60px;
+    
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    margin-left: 500px;
+    
+}
+a{
+    text-decoration: none;
+    list-style: none;
+
+
+}
+.nav_li{
+    display: inline;
+    margin: 0 100px;
+    font-size: 15px;
+    color: black;
+}
+.nav_li a{
+    color: white;
+    font-size: 17px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+.nav_header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.actuales{
+    padding: 50px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    color: white;
+}
+.trapos{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 0 10px 200px;
+    font-size: 20px;
+    margin-right: 180px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.nombreyfoto img{
+    margin: 0 0 20px 40px;
+    width: 400px;
+    height: 300px;
+
+}
+article{
+    display: inline-block;
+}
+main{
+    background-image: url(../images/aficion-estudiantes-de-la-plata.jpg) ;
+    background-size: cover;
+}
+footer{
+    background: rgb(232,6,6);
+    background: linear-gradient(90deg, rgba(232,6,6,1) 0%, rgba(255,255,255,1) 77%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ig{
+    width: 50px;
+    margin-left: 120px;
+
+
+}
+.logo_footer{
+    width: 50px;
+    margin: 10px 0 10px 0;
+    
+
+}
+.foto_destino{
+    width: 400px;
+    height: 300px;
+    padding-left: 70px;
+    
+    
+}
+.viajes p{
+    
+    background-color: red;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    padding-left: 70px;
+}
+.intro_viajes{
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px 0;
+}
+
+   
+
+.historia img{
+    width: 500px;
+    
+    
+}
+.historia article{
+    display: flex;
+}
+.historia p{
+    margin-left: 100px;
+    margin-top: 100px;
+    color: white;
+}
+.fotos_galeria img{
+    width: 300px;
+    height: 300px;
+}
+.fotos_galeria{
+    margin-left: 150px;
+}
+.galeria_h2{
+    font-family: 'Amatic SC', cursive;
+    color: white;   
+    padding: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+.nav_footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.li_footer a{
+    list-style: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Bebas Neue', cursive;
+    
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.nav_footer{
+    margin-left: 70px;
+    padding-right: 30px;
+    border-right: 10px;
+    border-right-color: black;
+    border-right-width: 10px;
+    border-right-style: double;
+}
+.li_footer :hover{
+    text-decoration: underline;
+}
+.nav_li :hover{
+    text-decoration: underline;
+}
+.logo_footer{
+    margin-right: 20px;
+    width: 100px;
+}
+.visitanos{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+.instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link_ig{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
