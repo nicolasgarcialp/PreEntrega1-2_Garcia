@@ -53,9 +53,9 @@ a{
     color: white;
 }
 .trapos{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Bebas Neue', cursive;
     margin: 0 0 10px 200px;
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 180px;
     background-color: white;
     text-align: center;
@@ -101,14 +101,7 @@ footer{
     
     
 }
-.viajes p{
-    
-    background-color: red;
-    color: white;
-    margin: 20px;
-    text-align: center;
-    padding-left: 70px;
-}
+
 .intro_viajes{
     color: white;
     text-align: center;
@@ -125,6 +118,8 @@ footer{
 }
 .historia article{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .historia p{
     margin-left: 100px;
@@ -189,4 +184,29 @@ footer{
 .link_ig{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
+}
+.historia p{
+    font-family: 'Teko', sans-serif;
+    margin-bottom: 120px;
+}
+.historia_div-organizador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.historia h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    background-color: red;
+    border-radius: 20px;
+}
+.viajes_destino{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align:center;
+    background-color:rgb(172, 37, 37);
+    margin-left: 70px;
+}
+.foto_retiradas{
+    border-radius: 50px;
 }
