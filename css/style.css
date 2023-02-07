@@ -210,3 +210,60 @@ footer{
 .foto_retiradas{
     border-radius: 50px;
 }
+.volver_inicio{
+    display: none;
+}
+
+/* MEDIA MOBILE */
+@media screen and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        margin: 0;
+    }
+    .logo{
+        height: 60px;
+    }
+    .nav_ul{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .actuales{
+        padding: 5;
+    }
+    .nav_footer{
+        display: none;
+    }
+    .volver_inicio{
+        display: initial;
+        color: black;
+        margin: 10px;
+    }
+    .volver_inicio:hover{
+        text-decoration: underline;
+    }
+    .logo_footer{
+        height: 50%;
+    }
+    .instagram{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ig{
+        margin: 0;
+    }
+   
+
+}
+
