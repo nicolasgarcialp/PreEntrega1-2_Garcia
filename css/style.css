@@ -250,6 +250,10 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.navbar_item_mio:hover{
+    background-color: wheat;
+    border-radius: 30px;
+}
 
 
 /* MEDIA MOBILE */
