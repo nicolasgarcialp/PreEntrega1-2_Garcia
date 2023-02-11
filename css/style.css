@@ -76,6 +76,7 @@ a{
     background-color: white;
     text-align: center;
     border-radius: 5px;
+    width: fit-content;
 }
 
 .nombreyfoto img{
@@ -254,7 +255,29 @@ footer{
     background-color: wheat;
     border-radius: 30px;
 }
-
+.seba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foto_historia{
+    border-radius: 50px;
+}
+.h2_mobile{
+    display: none;
+}
+.intro_historia_h2{
+    text-align: center;
+}
+.row_historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2_mobile{
+    width: max-content;
+}
 
 /* MEDIA MOBILE */
 @media screen and (max-width:1537px){
@@ -263,6 +286,7 @@ footer{
         width: 90%;
         margin-left:30px ;
     }
+
 }
 
 @media screen and (max-width:1396px){
@@ -274,13 +298,25 @@ footer{
         justify-content: center;
         grid-column-gap: 50px;
     }
+    .h2_mobile{
+        display: initial;
+    }
+    .historia_div-organizador h2{
+        display: none;
+    }
 }
 @media screen and (max-width:992px){
 
     .seba{
         width: 81%;
     }
-
+    .nombreyfoto{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .historia_div-organizador p{
+        margin: 20px;
+    }
 }
 
 @media screen and (max-width:687px) {
@@ -333,6 +369,10 @@ footer{
     }
     .seba{
         width: 100%;
+    }
+    .nombreyfoto{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
     }
     }
     
