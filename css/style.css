@@ -7,19 +7,20 @@
 .header_div{
     background: rgb(232,6,6);
     background: linear-gradient(90deg, rgba(232,6,6,1) 0%, rgba(255,255,255,1) 77%);
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    grid-template-rows: 1;
     align-items: center;
-    justify-content: space-between;
 
 }
 h1{
     font-size: 60px;
-    
     font-family: 'Bebas Neue', cursive;
     color: black;
-    margin-left: 500px;
-    
+    text-align: center;
+}
+.logo{
+    grid-area: "logo";
 }
 a{
     text-decoration: none;
@@ -44,6 +45,22 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: white;
+}
+.main_actuales{
+    overflow-x: visible;
+}
+.intro_historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 10px;
+}
+.intro_historia_p{
+    font-size: 20px;
+    margin-top: 20px;
 }
 .actuales{
     padding: 50px;
@@ -54,22 +71,26 @@ a{
 }
 .trapos{
     font-family: 'Bebas Neue', cursive;
-    margin: 0 0 10px 200px;
+    margin-top: 10px;
     font-size: 30px;
-    margin-right: 180px;
     background-color: white;
     text-align: center;
     border-radius: 5px;
 }
-.nombreyfoto img{
-    margin: 0 0 20px 40px;
-    width: 400px;
-    height: 300px;
 
+.nombreyfoto img{
+    margin-bottom: 20px;
+    width: 100%;
 }
-article{
-    display: inline-block;
+.nombreyfoto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3; 
 }
+.garra_del{
+    width: 180px;
+}
+
 main{
     background-image: url(../images/aficion-estudiantes-de-la-plata.jpg) ;
     background-size: cover;
@@ -81,6 +102,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-top: 10px white solid;
 }
 .ig{
     width: 50px;
@@ -97,9 +119,14 @@ footer{
 .foto_destino{
     width: 400px;
     height: 300px;
-    padding-left: 70px;
-    
-    
+}
+.h2_viajes{
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    padding: 30px 0;
+    font-size: 50px;
+    text-decoration: underline;
 }
 
 .intro_viajes{
@@ -108,8 +135,6 @@ footer{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 0;
 }
-
-   
 
 .historia img{
     width: 500px;
@@ -205,23 +230,61 @@ footer{
     font-size: 20px;
     text-align:center;
     background-color:rgb(172, 37, 37);
-    margin-left: 70px;
+    width: 300px;
+    margin: 10px 0 0 50px;
 }
 .foto_retiradas{
     border-radius: 50px;
+    height: 400px;
 }
 .volver_inicio{
     display: none;
 }
+.foto_actuales{
+    border-radius: 50px;
+    height: 400px;
+    width: 500px;
+    
+}
+.viajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 /* MEDIA MOBILE */
-@media screen and (max-width:500px) {
+@media screen and (max-width:1537px){
+
+    .foto_actuales{
+        width: 90%;
+        margin-left:30px ;
+    }
+}
+
+@media screen and (max-width:1396px){
+
+    .nombreyfotos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        justify-content: center;
+        grid-column-gap: 50px;
+    }
+}
+@media screen and (max-width:992px){
+
+    .seba{
+        width: 81%;
+    }
+
+}
+
+@media screen and (max-width:687px) {
     *{
         margin: 0;
         padding: 0;
         overflow-x: hidden;
     }
-    
     .header_div{
         display: flex;
         flex-direction: column;
@@ -264,8 +327,27 @@ footer{
     .ig{
         margin: 0;
     }
-
+    .seba{
+        width: 100%;
+    }
+    }
+    
+    
+   
+    @media screen and (max-width:436px){
+        footer{
+            flex-direction: column;
+        }
+        .foto_actuales{
+            width: 100%;
+            margin: 0;
+        }
+    }
    
 
-}
+    
+    
+    
+
+
 

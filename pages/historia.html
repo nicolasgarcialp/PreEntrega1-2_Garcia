@@ -15,25 +15,44 @@
 <body>
     <header>
         <div class="header_div">
-            <a href="../index.html"><img src="../images/favicon.jpg" alt="logo" id="logo" class="logo"></a>
             <a href="../index.html"><h1>Los pibes de los trapos</h1></a>
+            <a href="../index.html"><img src="../images/favicon.jpg" alt="logo" id="logo" class="logo"></a>
         </div>
-        <nav class="nav_header">
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="../index.html">Banderas actuales</a> </li>
-                <li class="nav_li"><a href="../pages/retiradas.html">Retiradas</a></li>
-                <li class="nav_li"><a href="../pages/historia.html">Historia</a></li>
-                <li class="nav_li"><a href="../pages/viajes.html">Viajes al exterior</a></li>
-                <li class="nav_li"><a href="../pages/galeria.html">Galería de imágenes</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item" >
+                    <a class="nav-link" href="../index.html">Banderas actuales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/retiradas.html">Retiradas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/viajes.html">Viajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/galeria.html">Galería de imágenes</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+
     </header>
     <main>
-        <section>
-           <p>
+        <section class="intro_historia">
+           <h2 class="intro_historia_h2">
             Cada bandera tiene su historia, sus años, sus anécdotas y a veces cambia de manos. 
-           </p>
-           <p>
+           </h2>
+           <p class="intro_historia_p">
             En esta sección se detalla la historia de cada una de nuestras banderas.
            </p>
         </section>
