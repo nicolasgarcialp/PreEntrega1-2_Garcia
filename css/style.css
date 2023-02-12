@@ -127,10 +127,30 @@ footer{
 .h2_viajes{
     color: white;
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Amatic SC', cursive;
     padding: 30px 0;
     font-size: 50px;
     text-decoration: underline;
+}
+.viajes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+}
+.viajes_contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+.viajes_destino{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align:center;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 30px;
 }
 
 .intro_viajes{
@@ -222,21 +242,14 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*  */
 }
-.historia h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-    background-color: red;
-    border-radius: 20px;
+.historia_div-organizador h2{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 40px;
 }
-.viajes_destino{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    text-align:center;
-    background-color:rgb(172, 37, 37);
-    width: 300px;
-    margin: 10px 0 0 50px;
-}
+
 .foto_retiradas{
     border-radius: 50px;
     height: 400px;
@@ -251,10 +264,6 @@ footer{
     width: 500px;
     
 }
-.viajes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .navbar_item_mio:hover{
     background-color: wheat;
     border-radius: 30px;
@@ -263,6 +272,12 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.intro_historia{
+    margin-bottom: 20px;
+}
+.intro_historia_p{
+    text-align: center;
 }
 .reti{
     width: 90%;
@@ -284,8 +299,47 @@ footer{
 }
 .h2_mobile{
     width: max-content;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+.carousel_mio{
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    margin: 20px;
+}
+.foto_carousel{
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+.carruseles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.texto_fotos{
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 30px;
+}
+.h3_titulo{
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+.america{
+    display: flex;
+    justify-content: space-around;
+}
+.resto{
+    display: flex;
+    justify-content: space-around;
 }
 
+    
 /* MEDIA MOBILE */
 @media screen and (max-width:1537px){
 
@@ -324,7 +378,21 @@ footer{
     .historia_div-organizador p{
         margin: 20px;
     }
+    .america{
+        flex-direction: column;
+    }
+    .resto{
+        flex-direction: column;
+    }
+    .carousel_mio{
+        width: 90%;
+    }
+    .viajes{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
 }
+
 
 @media screen and (max-width:687px) {
     *{
@@ -358,6 +426,10 @@ footer{
         display: initial;
         color: black;
         margin: 10px;
+
+    }
+    .navbar_item_mio:hover{
+        background-color: white;
     }
     .volver_inicio:hover{
         text-decoration: underline;
@@ -381,6 +453,10 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
     }
+    .viajes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
     }
     
     
@@ -392,6 +468,9 @@ footer{
         .foto_actuales{
             width: 100%;
             margin: 0;
+        }
+        .carousel_mio{
+            height: 90%;
         }
     }
    
