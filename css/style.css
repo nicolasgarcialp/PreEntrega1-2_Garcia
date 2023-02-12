@@ -264,6 +264,12 @@ footer{
     width: 500px;
     
 }
+.seba:hover{
+    transform: scale(1.3);
+}
+.historia_scale:hover{
+    transform: scale(1.2);
+}
 .navbar_item_mio:hover{
     background-color: wheat;
     border-radius: 30px;
@@ -370,6 +376,12 @@ footer{
 
     .seba{
         width: 81%;
+    }
+    .seba:hover{
+       transform: none;
+    }
+    .historia_scale:hover{
+        transform: none;
     }
     .nombreyfoto{
         grid-template-columns: 1fr 1fr;
