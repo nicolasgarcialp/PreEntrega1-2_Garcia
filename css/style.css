@@ -344,7 +344,12 @@ footer{
     display: flex;
     justify-content: space-around;
 }
-
+.viajes_contenedor:hover{
+    transform: scale(1.3);
+}
+.carousel_mio:hover{
+    transform: scale(1.2);
+}
     
 /* MEDIA MOBILE */
 @media screen and (max-width:1537px){
@@ -381,6 +386,12 @@ footer{
        transform: none;
     }
     .historia_scale:hover{
+        transform: none;
+    }
+    .viajes_contenedor:hover{
+        transform: none;
+    }
+    .carousel_mio:hover{
         transform: none;
     }
     .nombreyfoto{
