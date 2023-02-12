@@ -70,13 +70,13 @@ a{
     color: white;
 }
 .trapos{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Amatic SC', cursive;
     margin-top: 10px;
     font-size: 30px;
-    background-color: white;
     text-align: center;
     border-radius: 5px;
     width: fit-content;
+    color: white;
 }
 
 .nombreyfoto img{
@@ -87,6 +87,8 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3; 
+    align-content: center;
+    justify-items: center;
 }
 .garra_del{
     width: 180px;
@@ -118,8 +120,9 @@ footer{
 
 }
 .foto_destino{
-    width: 400px;
+    width: 90%;
     height: 300px;
+    border-radius: 20px;
 }
 .h2_viajes{
     color: white;
@@ -237,6 +240,7 @@ footer{
 .foto_retiradas{
     border-radius: 50px;
     height: 400px;
+    width: 500px;
 }
 .volver_inicio{
     display: none;
@@ -259,6 +263,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.reti{
+    width: 90%;
 }
 .foto_historia{
     border-radius: 50px;
