@@ -1,0 +1,7 @@
+@mixin palabras ($f-size, $marg, $pad){
+    font-size: $f-size;
+    margin: $marg;
+    padding: $pad;
+}
+
+

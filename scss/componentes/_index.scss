@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-wrap: wrap;
+    
+}
+a{
+    text-decoration: nth($display, 1 );
+    list-style: nth($display, 1 );
+}
+body{
+    header{
+        .header_div{
+            background: nth($colores, 1 );
+            background: linear-gradient(90deg, rgba(232,6,6,1) 0%, rgba(255,255,255,1) 77%);
+            display: nth($display, 2 );
+            grid-template-columns: 7fr 1fr;
+            grid-template-rows: 1;
+            align-items: map-get($mapageneral, centrar);
+
+            h1{
+                font-size: 60px;
+                font-family: $f-family;
+                color: nth($colores, 2 );
+                text-align: map-get($mapageneral, centrar );
+                @media screen and (max-width:687px){
+                    margin: 0;
+                }
+            }
+            .logo{
+                grid-area: "logo";
+                @media screen and (max-width:687px){
+                    height: 60px;
+                }
+            }
+            @media screen and (max-width:687px){
+                display: nth($display, 3 );
+                flex-direction: map-get($mapageneral , f-column );
+                align-items: map-get($mapageneral, centrar );
+            }
+        }
+        nav{
+            div{
+                div{
+                    ul{
+                        .navbar_item_mio{
+                            &:hover{
+                                background-color: nth($colores, 4 );
+                                border-radius: 30px;
+                                @media screen and (max-width:687px){
+                                    background-color: nth($colores, 3 );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        background-image: url(../images/aficion-estudiantes-de-la-plata.jpg) ;
+        background-size: cover;
+
+        .actuales{
+            padding: 50px;
+            text-align: map-get($mapageneral , centrar );
+            font-family: 'Amatic SC', cursive;
+            font-size: 50px;
+            color: nth($colores, 3 );
+            @media screen and (max-width:687px){
+                padding: 5;
+            }
+        }
+        .nombreyfoto{
+            display: nth($display, 2 );
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 3; 
+            align-content: map-get($mapageneral , centrar );
+            justify-items: map-get($mapageneral , centrar );
+            .seba{
+                @extend %posicion;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                @media screen and (max-width:992px){
+                    width: 81%;
+                    &:hover{
+                        transform: nth($display, 1 );
+                    }
+                }
+                @media screen and (max-width:687px){
+                    width: map-get($mapageneral, porcentaje );
+                }
+                .foto_retiradas{
+                    border-radius: 50px;
+                    height: 400px;
+                    width: 450px;
+                    @media screen and (max-width:992px){
+                        &:hover{
+                            transform: nth($display, 1 );
+                        }
+                    }
+                }
+                .trapos{
+                    font-family: 'Amatic SC', cursive;
+                    margin-top: 10px;
+                    font-size: 30px;
+                    text-align: map-get($mapageneral, centrar );
+                    border-radius: 5px;
+                    width: fit-content;
+                    color: nth($colores , 3 );
+                }
+            }
+            .reti{
+                @extend %posicion;
+                width: 90%;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                .foto_retiradas{
+                    border-radius: 50px;
+                    height: $px-foto;
+                    width: 450px;
+
+                    @media screen and (max-width:992px){
+                        &:hover{
+                            transform: nth($display, 1 );
+                        }
+                    }
+                }
+                .trapos{
+                    font-family: 'Amatic SC', cursive;
+                    margin-top: 10px;
+                    font-size: 30px;
+                    text-align: map-get($mapageneral, centrar );
+                    border-radius: 5px;
+                    width: fit-content;
+                    color: nth($colores, 3 );
+                }
+            }
+            @media screen and (max-width:992px){
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                width: 81%;
+                &:hover{
+                    transform: nth($display, 1 );
+                }
+            }
+            @media screen and (max-width:687px){
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5, 1fr);
+                width: map-get($mapageneral, porcentaje );
+            }
+
+        }
+        div{
+            .nombreyfotos{
+                .seba{
+                    @extend %posicion;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                    .foto_actuales{
+                        border-radius: 50px;
+                        height: 400px;
+                        width: 500px;
+                        @media screen and (max-width:1537px){
+                            width: 90%;
+                            margin-left:30px ;
+                        }
+                        @media screen and (max-width:436px){
+                            width: map-get($mapageneral, porcentaje );
+                            margin: 0;
+                        }
+                    }
+                    .trapos{
+                        font-family: 'Amatic SC', cursive;
+                        margin-top: 10px;
+                        font-size: 30px;
+                        text-align: map-get($mapageneral, centrar );
+                        width: fit-content;
+                        color: nth($colores, 3 );
+                    }
+                    @media screen and (max-width:992px){
+                        width: 81%;
+                        &:hover{
+                            transform: nth($display, 1 );
+                        }
+                    }
+                    @media screen and (max-width:687px){
+                        width: map-get($mapageneral, 1 );
+                    }
+                }
+                @media screen and (max-width:1396px){
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: repeat(4, 1fr);
+                    align-items: map-get($mapageneral, centrar );
+                    justify-content: map-get($mapageneral, centrar );
+                    grid-column-gap: 50px;
+                }
+            }
+        }
+        .intro_historia{
+            @extend %posicion;
+            justify-content: map-get($mapageneral, centrar );
+            color: nth($colores, 3 );
+            padding-top: 10px;
+            margin-bottom: 20px;
+            .intro_historia_h2{
+                text-align: map-get($mapageneral, centrar );
+            }
+            .intro_historia_p{
+                text-align: map-get($mapageneral, centrar);
+            }
+        }
+        .historia{
+            img{
+                width: 500px;
+            }
+            article{
+                display: nth($display, 3 );
+                align-items: map-get($mapageneral, centrar );
+                justify-content: map-get($mapageneral, centrar );
+            }
+            p{
+                margin-left: 100px;
+                margin-top: 100px;
+                color: nth($colores, 3 );
+                font-family: 'Teko', sans-serif;
+                margin-bottom: 120px;
+            }
+            .historia_scale{
+                &:hover{
+                    transform: scale(1.2);
+                    @media screen and (max-width:992px){
+                        transform: nth($display, 1 );
+                    }
+                }
+                .row_historia{
+                    display: nth($display, 3 );
+                    flex-direction: map-get($mapageneral, f-column );
+                    justify-content: map-get($mapageneral, centrar );
+                    align-items: map-get($mapageneral, centrar );
+                    .h2_mobile{
+                        display: nth($display, 1 );
+                        width: max-content;
+                        color: nth($colores, 3 );
+                        font-family: 'Amatic SC', cursive;
+                        @media screen and (max-width:1396px){
+                            display: nth($display, 4 );
+                        }
+                    }
+                    .foto_historia{
+                        border-radius: 50px;
+                    }
+                }
+                .historia_div-organizador{
+                    display: nth($display, 3 );
+                    flex-direction: map-get($mapageneral, f-column );
+                    align-items: map-get($mapageneral, centrar );
+                    h2{
+                        font-family: 'Amatic SC', cursive;
+                        color: nth($colores, 3 );
+                        font-size: 40px;
+                        @media screen and (max-width:1396px){
+                            display: nth($display, 1 );
+                        }
+                    }
+                    p{
+                        @media screen and (max-width:992px){
+                            margin: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .h2_viajes{
+            color: nth($colores, 3 );
+            text-align: map-get($mapageneral, centrar );
+            font-family: 'Amatic SC', cursive;
+            padding: 30px 0;
+            font-size: 50px;
+            text-decoration: $subrayado;
+        }
+        .intro_viajes{
+            color: nth($colores, 3 );
+            text-align: map-get($mapageneral, centrar );
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 30px 0;
+        }
+        .viajes{
+            display: nth($display, 2 );
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            align-content: map-get($mapageneral, centrar );
+            .viajes_contenedor{
+                @extend %posicion;
+                margin: 10px;
+                .viajes_destino{
+                    font-family: $f-family;
+                    font-size: 20px;
+                    text-align: map-get($mapageneral, center );
+                    font-family: 'Amatic SC', cursive;
+                    color: nth($colores, 3 );
+                    font-size: 30px;
+                }
+                .foto_destino{
+                    width: 90%;
+                    height: 300px;
+                    border-radius: 20px;
+                }
+                &:hover{
+                    transform: scale(1.2);
+                    @media screen and (max-width:992px){
+                        transform: nth($display, 1 );
+                    }
+                }
+            }
+            @media screen and (max-width:992px){
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(5, 1fr);
+            }
+            @media screen and (max-width:687px){
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(9, 1fr);
+            }
+        }
+        .galeria_h2{
+            font-family: 'Amatic SC', cursive;
+            color: nth($colores, 3 );
+            padding: 30px;
+            font-size: 50px;
+            text-align: map-get($mapageneral, centrar );
+        }
+        .carruseles{
+@extend %posicion;
+            justify-content: $espaciado;
+            .h3_titulo{
+                font-size: 40px;
+                font-family: 'Amatic SC', cursive;
+                color: nth($colores, 3 );
+            }
+            .america{
+                display: nth($display, 3 );
+                justify-content: $espaciado;
+                .carousel_mio{
+                    width: $px-foto;
+                    height: $px-foto;
+                    margin-left: 20px;
+                    margin: 20px;
+                    &:hover{
+                        transform: scale(1.2);
+                        @media screen and (max-width:992px){
+                            transform: nth($display, 1 );
+                        }
+                    }
+                }
+                div{
+                    div{
+                        div{
+                            .foto_carousel{
+                                width: $px-foto;
+                                height: $px-foto;
+                                border-radius: 30px;
+                            }
+                            div{
+                                .texto_fotos{
+                                    background-color: nth($colores, 2 );
+                                    opacity: 0.4;
+                                    border-radius: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width:992px){
+                    flex-direction: map-get($mapageneral, f-column );
+                }
+            }
+            .resto{
+                display: nth($display, 3 );
+                justify-content: $espaciado;
+                .carousel_mio{
+                    width: $px-foto;
+                    height: $px-foto;
+                    margin-left: 20px;
+                    margin: 20px;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                    @media screen and (max-width:992px){
+                        width: 90%;
+                    }
+                    @media screen and (max-width:436px){
+                        height: 90%;
+                    }
+                }
+                div{
+                    div{
+                        div{
+                            .foto_carousel{
+                                width: $px-foto;
+                                height: $px-foto;
+                                border-radius: 30px;
+                            }
+                            div{
+                                .texto_fotos{
+                                    background-color: nth($colores, 2 );
+                                    opacity: 0.4;
+                                    border-radius: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width:992px){
+                    flex-direction: map-get($mapageneral, f-column );
+                }
+            }
+        }
+    }
+    .main_actuales{
+        overflow-x: visible;
+    }
+    footer{
+        background: nth($colores, 1 );
+        background: linear-gradient(90deg, rgba(232,6,6,1) 0%, rgba(255,255,255,1) 77%);
+        display: nth($display, 3 );
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: map-get($mapageneral, centrar );
+        border-top: 10px white solid;
+        .nav_footer{
+            display: nth($display, 3 );
+            flex-direction: map-get($mapageneral, f-column );
+            margin-left: 70px;
+            padding-right: 30px;
+            border-right: 10px;
+            border-right-color: nth($colores, 2 );
+            border-right-width: 10px;
+            border-right-style: double;
+            ul{
+                .li_footer{
+                    &:hover{
+                        text-decoration: $subrayado;
+                    }
+                    a{
+                        list-style: nth($display, 1 );
+                        color: nth($colores, 3 );
+                        font-size: 17px;
+                        font-family: $f-family;
+                        
+                        border-radius: 5px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            @media screen and (max-width:687px){
+                display: nth($display, 1 );
+            }
+        }
+        .instagram{
+            display: nth($display, 3 );
+            flex-direction: map-get($mapageneral, f-column );
+            justify-content: map-get($mapageneral, centrar );
+            .volver_inicio{
+                display: nth($display, 1 );
+                @media screen and (max-width:687px){
+                    display: nth($display, 4 );
+                    color: nth($colores, 2 );
+                    margin: 10px;
+                    &:hover{
+                        text-decoration: $subrayado;
+                    }
+                }
+            }
+            a{
+                .ig{
+                    width: 50px;
+                    margin-left: 120px;
+                    @media screen and (max-width:687px){
+                        margin: 0;
+                    }
+                }
+            }
+            .visitanos{
+                font-family: $f-family;
+                font-size: 40px;
+            }
+            .link_ig{
+                font-family: $f-family;
+                text-align: map-get($mapageneral, centrar );
+            }
+            @media screen and (max-width:687px){
+                display: nth($display, 3 );
+                flex-direction: map-get($mapageneral, f-column );
+                justify-content: map-get($mapageneral, centrar );
+                align-items: map-get($mapageneral, centrar );
+            }
+        }
+        a{
+            .logo_footer{
+                margin-right: 20px;
+                width: 100px;
+                @media screen and (max-width:687px){
+                    height: 50%;
+                }
+            }
+        }
+        @media screen and (max-width:436px){
+            flex-direction: map-get($mapageneral, f-column );
+        }
+    }
+}
