@@ -1,6 +1,8 @@
-style2.css.map,
-imagenes_sin_uso,
-node_modules,
 wireframes,
 package-lock.json,
-package.json
+package.json,
+wireframes,
+node_modules,
+imagenes_sin_uso,
+style2.css.map
+;
