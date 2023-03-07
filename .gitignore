@@ -5,4 +5,5 @@ wireframes,
 node_modules,
 imagenes_sin_uso,
 style2.css.map
+/node_modules
 ;
