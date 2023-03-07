@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-wrap: wrap;
-    
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 a{
     text-decoration: nth($display, 1 );
@@ -60,7 +60,6 @@ body{
     main{
         background-image: url(../images/aficion-estudiantes-de-la-plata.jpg) ;
         background-size: cover;
-
         .actuales{
             padding: 50px;
             text-align: map-get($mapageneral , centrar );
@@ -71,88 +70,7 @@ body{
                 padding: 5;
             }
         }
-        .nombreyfoto{
-            display: nth($display, 2 );
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 3; 
-            align-content: map-get($mapageneral , centrar );
-            justify-items: map-get($mapageneral , centrar );
-            .seba{
-                @extend %posicion;
-                &:hover{
-                    transform: scale(1.2);
-                }
-                @media screen and (max-width:992px){
-                    width: 81%;
-                    &:hover{
-                        transform: nth($display, 1 );
-                    }
-                }
-                @media screen and (max-width:687px){
-                    width: map-get($mapageneral, porcentaje );
-                }
-                .foto_retiradas{
-                    border-radius: 50px;
-                    height: 400px;
-                    width: 450px;
-                    @media screen and (max-width:992px){
-                        &:hover{
-                            transform: nth($display, 1 );
-                        }
-                    }
-                }
-                .trapos{
-                    font-family: 'Amatic SC', cursive;
-                    margin-top: 10px;
-                    font-size: 30px;
-                    text-align: map-get($mapageneral, centrar );
-                    border-radius: 5px;
-                    width: fit-content;
-                    color: nth($colores , 3 );
-                }
-            }
-            .reti{
-                @extend %posicion;
-                width: 90%;
-                &:hover{
-                    transform: scale(1.2);
-                }
-                .foto_retiradas{
-                    border-radius: 50px;
-                    height: $px-foto;
-                    width: 450px;
 
-                    @media screen and (max-width:992px){
-                        &:hover{
-                            transform: nth($display, 1 );
-                        }
-                    }
-                }
-                .trapos{
-                    font-family: 'Amatic SC', cursive;
-                    margin-top: 10px;
-                    font-size: 30px;
-                    text-align: map-get($mapageneral, centrar );
-                    border-radius: 5px;
-                    width: fit-content;
-                    color: nth($colores, 3 );
-                }
-            }
-            @media screen and (max-width:992px){
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                width: 81%;
-                &:hover{
-                    transform: nth($display, 1 );
-                }
-            }
-            @media screen and (max-width:687px){
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(5, 1fr);
-                width: map-get($mapageneral, porcentaje );
-            }
-
-        }
         div{
             .nombreyfotos{
                 .seba{
@@ -215,9 +133,11 @@ body{
         }
         .historia{
             img{
-                width: 500px;
+                width: 80%;
             }
-            article{
+                
+                
+            .historia_scale{
                 display: nth($display, 3 );
                 align-items: map-get($mapageneral, centrar );
                 justify-content: map-get($mapageneral, centrar );
@@ -333,46 +253,63 @@ body{
             text-align: map-get($mapageneral, centrar );
         }
         .carruseles{
-@extend %posicion;
+            @extend %posicion;
             justify-content: $espaciado;
             .h3_titulo{
                 font-size: 40px;
                 font-family: 'Amatic SC', cursive;
                 color: nth($colores, 3 );
             }
-            .america{
+            .resto{
                 display: nth($display, 3 );
                 justify-content: $espaciado;
                 .carousel_mio{
+                        width: $px-foto;
+                        height: $px-foto;
+                        margin-left: 20px;
+                        margin: 20px;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                        @media screen and (max-width:992px){
+                            width: 90%;
+                        }
+                        @media screen and (max-width:436px){
+                            height: 90%;
+                        }
+                        div{
+                            div{
+                                .foto_carousel{
+                                    width: $px-foto;
+                                    height: $px-foto;
+                                    border-radius: 30px;
+                                }
+                                div{
+                                    .texto_fotos{
+                                        background-color: nth($colores, 2 );
+                                        opacity: 0.4;
+                                        border-radius: 30px;
+                                    }
+                                }
+                            }
+                        }
+                }
+                .carousel_america1{
                     width: $px-foto;
                     height: $px-foto;
                     margin-left: 20px;
                     margin: 20px;
                     &:hover{
                         transform: scale(1.2);
-                        @media screen and (max-width:992px){
-                            transform: nth($display, 1 );
-                        }
+                    }
+                    @media screen and (max-width:992px){
+                        width: 90%;
+                    }
+                    @media screen and (max-width:436px){
+                        height: 90%;
                     }
                 }
-                div{
-                    div{
-                        div{
-                            .foto_carousel{
-                                width: $px-foto;
-                                height: $px-foto;
-                                border-radius: 30px;
-                            }
-                            div{
-                                .texto_fotos{
-                                    background-color: nth($colores, 2 );
-                                    opacity: 0.4;
-                                    border-radius: 30px;
-                                }
-                            }
-                        }
-                    }
-                }
+
                 @media screen and (max-width:992px){
                     flex-direction: map-get($mapageneral, f-column );
                 }
