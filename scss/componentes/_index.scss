@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     overflow: auto;
-    overflow-y: scroll;
 }
 a{
     text-decoration: nth($display, 1 );
@@ -130,6 +129,7 @@ body{
             margin-bottom: 20px;
             .intro_historia_h2{
                 text-align: map-get($mapageneral, centrar );
+                overflow-y: hidden;
             }
             .intro_historia_p{
                 text-align: map-get($mapageneral, centrar);
