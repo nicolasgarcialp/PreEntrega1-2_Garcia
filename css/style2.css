@@ -76,6 +76,9 @@ body main .actuales {
     padding: 5;
   }
 }
+body main div .nombreyfotos .seba {
+  margin-top: 25px;
+}
 body main div .nombreyfotos .seba:hover {
   transform: scale(1.2);
 }
@@ -217,7 +220,7 @@ body main .viajes {
   align-content: center;
 }
 body main .viajes .viajes_contenedor {
-  margin: 10px;
+  margin: 25px 10px 10px 10px;
 }
 body main .viajes .viajes_contenedor .viajes_destino {
   font-family: "Bebas Neue", cursive;
@@ -276,9 +279,6 @@ body main .carruseles .resto .carousel_mio {
   margin-left: 20px;
   margin: 20px;
 }
-body main .carruseles .resto .carousel_mio:hover {
-  transform: scale(1.2);
-}
 @media screen and (max-width: 992px) {
   body main .carruseles .resto .carousel_mio {
     width: 90%;
@@ -305,9 +305,6 @@ body main .carruseles .resto .carousel_america1 {
   margin-left: 20px;
   margin: 20px;
 }
-body main .carruseles .resto .carousel_america1:hover {
-  transform: scale(1.2);
-}
 @media screen and (max-width: 992px) {
   body main .carruseles .resto .carousel_america1 {
     width: 90%;
@@ -332,9 +329,6 @@ body main .carruseles .resto .carousel_mio {
   height: 400px;
   margin-left: 20px;
   margin: 20px;
-}
-body main .carruseles .resto .carousel_mio:hover {
-  transform: scale(1.2);
 }
 @media screen and (max-width: 992px) {
   body main .carruseles .resto .carousel_mio {

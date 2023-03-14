@@ -74,6 +74,7 @@ body{
         div{
             .nombreyfotos{
                 .seba{
+                    margin-top: 25px;
                     @extend %posicion;
                     &:hover{
                         transform: scale(1.2);
@@ -215,7 +216,7 @@ body{
             align-content: map-get($mapageneral, centrar );
             .viajes_contenedor{
                 @extend %posicion;
-                margin: 10px;
+                margin: 25px 10px 10px 10px;
                 .viajes_destino{
                     font-family: $f-family;
                     font-size: 20px;
@@ -268,9 +269,6 @@ body{
                         height: $px-foto;
                         margin-left: 20px;
                         margin: 20px;
-                        &:hover{
-                            transform: scale(1.2);
-                        }
                         @media screen and (max-width:992px){
                             width: 90%;
                         }
@@ -299,9 +297,6 @@ body{
                     height: $px-foto;
                     margin-left: 20px;
                     margin: 20px;
-                    &:hover{
-                        transform: scale(1.2);
-                    }
                     @media screen and (max-width:992px){
                         width: 90%;
                     }
@@ -322,9 +317,6 @@ body{
                     height: $px-foto;
                     margin-left: 20px;
                     margin: 20px;
-                    &:hover{
-                        transform: scale(1.2);
-                    }
                     @media screen and (max-width:992px){
                         width: 90%;
                     }
