@@ -99,6 +99,7 @@ body{
                         text-align: map-get($mapageneral, centrar );
                         width: fit-content;
                         color: nth($colores, 3 );
+                        overflow-y: hidden;
                     }
                     @media screen and (max-width:992px){
                         width: 81%;

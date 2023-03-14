@@ -106,6 +106,7 @@ body main div .nombreyfotos .seba .trapos {
   text-align: center;
   width: fit-content;
   color: white;
+  overflow-y: hidden;
 }
 @media screen and (max-width: 992px) {
   body main div .nombreyfotos .seba {
