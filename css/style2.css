@@ -79,14 +79,16 @@ body main .actuales {
 }
 body main div .nombreyfotos .seba {
   margin-top: 25px;
+  overflow-y: hidden;
 }
 body main div .nombreyfotos .seba:hover {
-  transform: scale(1.2);
+  transform: scale(1.07);
 }
 body main div .nombreyfotos .seba .foto_actuales {
   border-radius: 50px;
   height: 400px;
   width: 500px;
+  overflow-y: hidden;
 }
 @media screen and (max-width: 1537px) {
   body main div .nombreyfotos .seba .foto_actuales {
