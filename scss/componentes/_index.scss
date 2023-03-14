@@ -187,7 +187,6 @@ body{
                         font-family: 'Amatic SC', cursive;
                         color: nth($colores, 3 );
                         font-size: 40px;
-                        overflow-y: auto;
                         @media screen and (max-width:1396px){
                             display: nth($display, 1 );
                         }
@@ -265,7 +264,6 @@ body{
                 font-size: 40px;
                 font-family: 'Amatic SC', cursive;
                 color: nth($colores, 3 );
-                overflow-y: auto;
             }
             .resto{
                 display: nth($display, 3 );
