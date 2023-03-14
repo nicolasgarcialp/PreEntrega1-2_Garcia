@@ -8,7 +8,6 @@ body main .carruseles, body main .viajes .viajes_contenedor, body main .intro_hi
   margin: 0;
   padding: 0;
   overflow: auto;
-  overflow-y: hidden;
 }
 
 a {
@@ -192,6 +191,7 @@ body main .historia .historia_scale .historia_div-organizador h2 {
   font-family: "Amatic SC", cursive;
   color: white;
   font-size: 40px;
+  overflow-y: hidden;
 }
 @media screen and (max-width: 1396px) {
   body main .historia .historia_scale .historia_div-organizador h2 {
@@ -272,6 +272,7 @@ body main .carruseles .h3_titulo {
   font-size: 40px;
   font-family: "Amatic SC", cursive;
   color: white;
+  overflow-y: hidden;
 }
 body main .carruseles .resto {
   display: flex;

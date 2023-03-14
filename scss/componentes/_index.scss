@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     overflow: auto;
-    overflow-y: hidden;
 }
 a{
     text-decoration: nth($display, 1 );
@@ -187,6 +186,7 @@ body{
                         font-family: 'Amatic SC', cursive;
                         color: nth($colores, 3 );
                         font-size: 40px;
+                        overflow-y: hidden;
                         @media screen and (max-width:1396px){
                             display: nth($display, 1 );
                         }
@@ -264,6 +264,7 @@ body{
                 font-size: 40px;
                 font-family: 'Amatic SC', cursive;
                 color: nth($colores, 3 );
+                overflow-y: hidden;
             }
             .resto{
                 display: nth($display, 3 );
