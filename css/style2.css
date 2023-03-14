@@ -8,6 +8,7 @@ body main .carruseles, body main .viajes .viajes_contenedor, body main .intro_hi
   margin: 0;
   padding: 0;
   overflow: auto;
+  overflow-y: scroll;
 }
 
 a {
