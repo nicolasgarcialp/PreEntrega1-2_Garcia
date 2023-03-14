@@ -7,7 +7,7 @@ body main .carruseles, body main .viajes .viajes_contenedor, body main .intro_hi
 * {
   margin: 0;
   padding: 0;
-  overflow-x: auto;
+  overflow: auto;
 }
 
 a {
@@ -154,7 +154,8 @@ body main .historia p {
   margin-bottom: 120px;
 }
 body main .historia .historia_scale:hover {
-  transform: scale(1.2);
+  margin-top: 40px;
+  transform: scale(1.15);
 }
 @media screen and (max-width: 992px) {
   body main .historia .historia_scale:hover {

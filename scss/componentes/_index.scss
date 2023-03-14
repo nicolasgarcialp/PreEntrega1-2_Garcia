@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: auto;
+    overflow: auto;
 }
 a{
     text-decoration: nth($display, 1 );
@@ -154,7 +154,8 @@ body{
             }
             .historia_scale{
                 &:hover{
-                    transform: scale(1.2);
+                    margin-top: 40px;
+                    transform: scale(1.15);
                     @media screen and (max-width:992px){
                         transform: nth($display, 1 );
                     }
