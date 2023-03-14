@@ -7,7 +7,7 @@ body main .carruseles, body main .viajes .viajes_contenedor, body main .intro_hi
 * {
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 a {
@@ -29,6 +29,7 @@ body header .header_div h1 {
   font-family: "Bebas Neue", cursive;
   color: black;
   text-align: center;
+  overflow-y: hidden;
 }
 @media screen and (max-width: 687px) {
   body header .header_div h1 {
