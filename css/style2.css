@@ -7,6 +7,7 @@ body main .carruseles, body main .viajes .viajes_contenedor, body main .intro_hi
 * {
   margin: 0;
   padding: 0;
+  overflow-x: auto;
 }
 
 a {
@@ -21,6 +22,7 @@ body header .header_div {
   grid-template-columns: 7fr 1fr;
   grid-template-rows: 1;
   align-items: center;
+  text-align: center;
 }
 body header .header_div h1 {
   font-size: 60px;
@@ -46,6 +48,7 @@ body header .header_div .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 body header nav div div ul .navbar_item_mio:hover {
@@ -353,9 +356,60 @@ body main .carruseles .resto div div div div .texto_fotos {
   opacity: 0.4;
   border-radius: 30px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 687px) {
   body main .carruseles .resto {
     flex-direction: column;
+  }
+}
+body main section {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 237px) {
+  body main section {
+    display: none;
+  }
+}
+body main section .titulo_form {
+  padding: 15px;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  color: white;
+}
+body main section .form {
+  text-align: center;
+}
+body main section .form .div_form {
+  color: white;
+  padding: 20px;
+}
+@media screen and (max-width: 776px) {
+  body main section .form .div_form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body main section .form .mensaje_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+body main section .form .mensaje_form input {
+  height: 50%;
+}
+@media screen and (max-width: 490px) {
+  body main section .form .mensaje_form {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 230px) {
+  body main {
+    width: fit-content;
   }
 }
 body .main_actuales {
@@ -426,6 +480,7 @@ body footer .instagram a .ig {
 body footer .instagram .visitanos {
   font-family: "Bebas Neue", cursive;
   font-size: 40px;
+  text-align: center;
 }
 body footer .instagram .link_ig {
   font-family: "Bebas Neue", cursive;

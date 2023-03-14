@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: auto;
 }
 a{
     text-decoration: nth($display, 1 );
@@ -15,7 +16,7 @@ body{
             grid-template-columns: 7fr 1fr;
             grid-template-rows: 1;
             align-items: map-get($mapageneral, centrar);
-
+            text-align: center;
             h1{
                 font-size: 60px;
                 font-family: $f-family;
@@ -35,6 +36,7 @@ body{
                 display: nth($display, 3 );
                 flex-direction: map-get($mapageneral , f-column );
                 align-items: map-get($mapageneral, centrar );
+                justify-content: center;
             }
         }
         nav{
@@ -348,10 +350,54 @@ body{
                         }
                     }
                 }
-                @media screen and (max-width:992px){
+                @media screen and (max-width:687px){
                     flex-direction: map-get($mapageneral, f-column );
                 }
             }
+        }
+        section{
+            @media screen and (max-width:237px){
+                display: nth($display, 1 );
+            }
+            padding-bottom: 20px;
+            .titulo_form{
+                padding: 15px;
+                text-align: map-get($mapageneral , centrar );
+                font-family: 'Amatic SC', cursive;
+                font-size: 50px;
+                color: nth($colores, 3 );
+            }
+            .form{
+                text-align: center;
+                .div_form{
+                    color: white;
+                    padding: 20px;
+                    @media screen and (max-width:776px){
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .mensaje_form{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    column-gap: 20px;
+                    align-items: center;
+                    padding: 20px;
+                    input{
+                        height: 50%;
+                    }
+                    @media screen and (max-width:490px){
+                        flex-direction: column;
+                        width: 80%;
+                        margin-left: 30px;
+                    }
+                }
+
+            }
+        }
+        @media screen and (max-width:230px){
+            width: fit-content;
         }
     }
     .main_actuales{
@@ -421,6 +467,7 @@ body{
             .visitanos{
                 font-family: $f-family;
                 font-size: 40px;
+                text-align: center;
             }
             .link_ig{
                 font-family: $f-family;
