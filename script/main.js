@@ -17,6 +17,9 @@ const RESPUESTA = "SI";
 const RESPNEG = "NO SE";
 if (pregunta.toUpperCase() == RESPUESTA){
     let bandera = prompt("Ingresa el nombre de una bandera. En caso de no saber, ingresar NO SE");
+    if (bandera.toUpperCase() == VACIO || bandera.toUpperCase() == RESPNEG){
+        console.log("No conoces ninguna bandera");
+    }
     if (bandera != VACIO && bandera.toUpperCase() != RESPNEG){
     for (let i = 0; i <= 7; i++) {
         bandera = prompt("Ingresa el nombre de una bandera. En caso de no saber, ingresar NO SE");
