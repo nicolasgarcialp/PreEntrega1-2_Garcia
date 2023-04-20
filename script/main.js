@@ -89,11 +89,16 @@ if (preguntaNuevaBandera.toUpperCase() == RESPUESTA ){
         agregarBandera();
         console.log(misBanderas);
     }
-let preguntaBusqueda = prompt("Queres saber si tu bandera está en el registro?");
-if (preguntaBusqueda.toUpperCase() == "SI") {
-    let banderaBuscada = prompt("Cual es el nombre de la bandera que queres buscar?");
-    let resultado = misBanderas.find ((bandera) => bandera.nombre = banderaBuscada);
-    console.log(resultado);
+let preguntaBusqueda = prompt("Quieres buscar una bandera en el registro?")
+if (preguntaBusqueda.toLocaleUpperCase() == "SI") {
+    let preguntaBandera = prompt("Cual es el nombre de la bandera que queres buscar?")
+    let existe = (misBanderas.some((banderas) => banderas.nombre == preguntaBandera.toUpperCase()));
+    if (existe) {
+        console.log (existe + ", la bandera fue encontrada en el registro");
+    }
+    if (existe == false) {
+        console.log("La bandera no fue encontrada");
+    }
 }
 
 
