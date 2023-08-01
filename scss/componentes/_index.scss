@@ -58,6 +58,9 @@ body{
             }
         }
     }
+    .main_registros{
+        margin: 50px;
+    }
     main{
         background-image: url(../images/aficion-estudiantes-de-la-plata.jpg) ;
         background-size: cover;
@@ -399,8 +402,9 @@ body{
         @media screen and (max-width:230px){
             width: fit-content;
         }
+       
     }
-    .main_
+    
     .main_actuales{
         overflow-x: visible;
     }

@@ -61,11 +61,13 @@ body header nav div div ul .navbar_item_mio:hover {
     background-color: white;
   }
 }
+body .main_registros {
+  margin: 50px;
+}
 body main {
   background-image: url(../images/aficion-estudiantes-de-la-plata.jpg);
   background-size: cover;
 }
-
 body main .actuales {
   padding: 50px;
   text-align: center;
